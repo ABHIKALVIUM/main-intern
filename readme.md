@@ -18,8 +18,8 @@ Installation & Running the Project
 
 Clone the repository:
 
-git clone https://github.com/your-repo/my-v0-project.git
-cd main intern
+git clone https://github.com/ABHIKALVIUM/main-intern.git
+cd main-intern
 
 Install dependencies:
 
