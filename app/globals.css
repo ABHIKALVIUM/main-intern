@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .hover-scale {
+    @apply transition-transform duration-300 ease-in-out hover:scale-105;
+  }
+  .btn-primary {
+    @apply px-6 py-2 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-opacity-90 transition-all;
+  }
+  .btn-secondary {
+    @apply px-6 py-2 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-opacity-90 transition-all;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White Background */
+    --foreground: 210 100% 20%; /* Deep Blue Text */
+    --primary: 210 100% 50%; /* Sky Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 210 90% 92%; /* Light Blue */
+    --secondary-foreground: 210 100% 25%;
+    --muted: 210 90% 96%;
+    --muted-foreground: 210 100% 40%;
+    --accent: 210 76% 61%;
+    --accent-foreground: 0 0% 100%;
+    --border: 210 90% 85%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 100% 10%; /* Deep Blue */
+    --foreground: 0 0% 98%;
+    --primary: 210 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 90% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 210 90% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --border: 210 90% 14.9%;
+  }
+}
+
+@layer components {
+  /* Header */
+  .navbar {
+    @apply flex items-center justify-between px-6 py-4 bg-primary text-primary-foreground shadow-lg;
+  }
+  .nav-link {
+    @apply px-4 py-2 text-lg font-medium hover:underline transition-all;
+  }
+
+  /* Product Card */
+  .product-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover-scale border border-border;
+  }
+  .product-image {
+    @apply w-full h-60 object-cover;
+  }
+  .product-info {
+    @apply p-4 text-center;
+  }
+  .product-title {
+    @apply text-lg font-semibold text-foreground;
+  }
+  .product-price {
+    @apply text-xl font-bold text-primary;
+  }
+  .product-btn {
+    @apply mt-4 btn-primary;
+  }
+
+  /* Footer */
+  .footer {
+    @apply bg-secondary text-secondary-foreground py-6 text-center mt-10;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
