@@ -19,6 +19,7 @@ Installation & Running the Project
 Clone the repository:
 
 git clone https://github.com/ABHIKALVIUM/main-intern.git
+
 cd main-intern
 
 Install dependencies:
