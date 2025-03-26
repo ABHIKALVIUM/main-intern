@@ -48,17 +48,6 @@ TypeScript ensures type safety and maintainability.
 
 Utilized for utility-first styling.
 
-tailwind-merge helps manage class merging.
-
-tailwindcss-animate is used for custom animations.
-
-3. UI Components & Forms
-
-Radix UI provides accessible, customizable UI primitives.
-
-React Hook Form & Zod handle form validation efficiently.
-
-Lucide React is used for lightweight icons.
 
 🔥 Challenges Faced & Solutions
 
@@ -72,7 +61,7 @@ Solution: Used a third-party library and handled camera permissions properly.
 
 Challenge: Handling deeply nested form fields efficiently.
 
-Solution: Used React Hook Form with Zod for schema validation and form handling.
+Solution: Used React Hook Form for schema validation and form handling.
 
 3. Performance Optimization
 
@@ -80,10 +69,3 @@ Challenge: Reducing unnecessary re-renders and optimizing images.
 
 Solution: Used Next.js Image Optimization and Memoization.
 
-🎯 Bonus Features
-
-Dark Mode Support
-
-Custom Animations using Tailwind CSS
-
-Optimized Performance with Next.js features
